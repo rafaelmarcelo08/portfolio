@@ -1,0 +1,67 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+#container-navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #191a21;
+}
+
+ul {
+    list-style: none; 
+}
+
+ul li {
+    display: inline;
+    margin: 25px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+label[for='btn_menu'] {
+    padding: 5px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+
+/***********************/
+#btn_menu {
+    margin-left: 35px;   
+}
+
+label[for="btn_menu"] {
+    display: none; 
+}
+/***********************/
+
+/**Inicio da resposividade da NavBar */
+@media only screen and (max-width: 800px) {
+
+    #btn_menu:checked ~ nav ul li   {
+        border: 1px solid red;
+        display: block;
+    }
+
+    #container-navbar { 
+        height: auto;
+    }
+    
+    label[for="btn_menu"] {
+        display: block; 
+    }
+
+}
+/**Fim da resposividade da NavBar */
