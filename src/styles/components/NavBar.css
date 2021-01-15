@@ -1,26 +1,46 @@
+/**Limpando o fluxo padrão da aplicação */
 * {
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
+/**Configuração padrão do container container-navbar */
 #container-navbar {
+    background-color: #191a21;
     width: 100%;
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #191a21;
 }
 
+/**Configuração padrão da logo */
+#logo {
+    justify-content: center;
+    text-align: center;
+}
+#logo label{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bolder;
+    line-height: 75px;
+    margin-right: 20px;
+}
+
+/**Configuração de estilo do menu */
 ul {
     list-style: none; 
+    display: inline-block;
 }
 
+/**Configurações no distanciamento dos links do menu */
 ul li {
-    display: inline;
+    display: inline-block;
     margin: 25px;
 }
 
+/**Configurações dos links do menu */
 ul li a {
     color: white;
     text-decoration: none;
@@ -28,40 +48,77 @@ ul li a {
     font-size: 18px;
 }
 
-label[for='btn_menu'] {
-    padding: 5px;
-    color: white;
+/**Estilo na ação do mouseover */
+nav ul li a:hover {
+    color: aqua;
+    transition: .5s;
+}
+
+/**Configuração do botão do menu */
+#check-btn {
+    float: right;
+    display: none;
+}
+
+.btn-menu {
     font-size: 30px;
+    color: #FFF;
+    float: right;
+    margin-right: 40px;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    display: none;
+    /*Mudar line-height ? */
+    line-height: 70px;
 }
 
-/***********************/
-#btn_menu {
-    margin-left: 35px;   
+
+/**RESPOSIVIDADE DA APLICAÇÃO */
+
+/**Resposividade para tablet */
+@media(max-width: 952px) {
+
+    /**Tamanho da logo*/
+
+    ul li {
+        margin-right: 9px;
+    }
 }
 
-label[for="btn_menu"] {
-    display: none; 
-}
-/***********************/
+/**Resposividade para movel */
+@media(max-width: 858px) { 
 
-/**Inicio da resposividade da NavBar */
-@media only screen and (max-width: 800px) {
-
-    #btn_menu:checked ~ nav ul li   {
-        border: 1px solid red;
-        display: block;
+    #container-navbar {
+        justify-content: space-between;
     }
 
-    #container-navbar { 
-        height: auto;
+    #logo label{
+        margin-left: 40px;
+    }
+
+    .btn-menu {
+		display: block;
     }
     
-    label[for="btn_menu"] {
-        display: block; 
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background-color: #191a21;
+		top: 100px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
     }
+    
+	nav ul li a {
+		font-size: 20px;
+	}
 
+	#check-btn:checked ~ ul {
+		left: 0;
+    }
 }
-/**Fim da resposividade da NavBar */

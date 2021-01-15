@@ -7,26 +7,28 @@ class NavBar extends Component {
         return (
             <div id='container-navbar'>
 
-            <input type='checkbox' id='btn_menu' />
-            <label for='btn_menu'> &#9776;</label>
-    
-            <nav>
-    
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/">Sobre mim</a></li>
-                    <li><a href="/">Resumo</a></li>
-                    <li><a href="/">Conhecimentos</a></li>
-                    <li><a href="/">Contato</a></li>
-                </ul>
-    
-    
-    
-            </nav>
-    
-    
-        </div>
+                <div id='logo'>
+                    <label>Minha Logo</label>
+                </div>
 
+                <div>
+
+                    <nav>
+
+                        <input type='checkbox' id='check-btn' />
+                        <label for='check-btn' className='btn-menu'> &#9776;</label>
+
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/">Sobre mim</a></li>
+                            <li><a href="/">Resumo</a></li>
+                            <li><a href="/">Conhecimentos</a></li>
+                            <li><a href="/">Contato</a></li>
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
         );
     }
 }
