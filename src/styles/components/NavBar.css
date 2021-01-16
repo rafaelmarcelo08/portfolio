@@ -16,12 +16,21 @@
 }
 
 /**Configuração padrão da logo */
+#logo{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
 #logo label{
     color: #FFF;
     font-size: 16px;
     font-weight: bolder;
-    line-height: 75px;
-    margin-right: 20px;
+}
+
+#logo img{
+    width: 80px;
+    height: 80px;
 }
 
 /**Configuração de estilo do menu */
@@ -71,9 +80,12 @@ nav ul li a:hover {
 
 /**Resposividade para tablet */
 @media(max-width: 952px) {
+     /**Setando o tamanho da fonte da logo */
+    #logo label{
+        font-size: 20px;
+    }
 
-    /**Tamanho da logo*/
-
+    /**Removendo espaçamento entre os itens do menu*/
     ul li {
         margin-right: 9px;
     }
@@ -85,6 +97,11 @@ nav ul li a:hover {
     /**Espaçamento entre o icone de menu e a logo */
     #container-navbar {
         justify-content: space-between;
+    }
+
+    /**Setando o tamanho da fonte da logo */
+    #logo label{
+        font-size: 23px;
     }
 
     /**Espaçamento entre o icone de menu e borda */
@@ -137,6 +154,6 @@ nav ul li a:hover {
 
     /**Mostrando o menu lateral */
 	#check-btn:checked ~ ul {
-		left: 0;
+        left: 0;
     }
 }

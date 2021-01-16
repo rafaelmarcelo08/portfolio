@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import '../styles/components/NavBar.css';
+import rocketLogo from '../assets/images/rocketLogo.png';
 
 class NavBar extends Component {
     render() {
@@ -8,7 +9,8 @@ class NavBar extends Component {
             <div id='container-navbar'>
 
                 <div id='logo'>
-                    <label>Minha Logo</label>
+                    <img src={rocketLogo} alt='Logo'/>
+                    <label>RocketDev</label>
                 </div>
 
                 <div className='control-menu'>
