@@ -11,7 +11,7 @@ class NavBar extends Component {
                     <label>Minha Logo</label>
                 </div>
 
-                <div>
+                <div className='control-menu'>
 
                     <nav>
 
