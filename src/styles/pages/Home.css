@@ -1,4 +1,145 @@
+/**Limpando o fluxo da aplicação */
 * {
     padding: 0px;
     margin: 0px;
+}
+
+/**Container principal Home */
+#containerHome {
+    background-color: #282a36;
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+}
+
+/**Configuração das imagens principal */
+.containerImagesHome {
+    margin: 0 20px;
+    width: 500px;
+    height: 500px;
+}
+
+.formatImagesHome {
+    width: 500px;
+    height: 500px;
+}
+
+/**Configuração do texto principal */
+#containerWelcomeFormat {
+    text-align: center;
+    font-size: 30px;
+    width: 500px;
+    margin: auto auto;
+}
+
+.textWelcome {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+/**Setado a cor do nome do desenvolvedor */
+.textWelcome span {
+    color: #50fa7b;
+}
+
+/**Setado a cor do desenvolvedor Fullstack */
+.textWelcome .fullstack{
+    color: #8be9fd;
+}
+
+/**Configuração do botão principal do github */
+.btn-git {
+    width: 160px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-git a {
+    text-transform: uppercase;
+    background-color: white;
+    color: #282a36;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 9px;
+    font-weight: bolder;
+    font-size: 30px;
+    width: 140px;
+}
+
+.btn-git a:hover {
+    background-color: #50fa7b;
+    color: white;
+    transition: all .6s;
+}
+
+.btn-git:hover {
+    animation: bounce .6s;
+}
+
+/**Criação da animação bounce */
+@keyframes bounce {
+    10%, 45%, 70% {
+        transform: translateX(-30px);
+    }
+    25%, 55%, 85% {
+        transform: translateX(30px);
+    }
+}
+
+/**RESPOSIVIDADE DA APLICAÇÃO PRINCIPAL */
+
+/**Resposividade para tablet */
+@media(max-width: 1410px) {
+    /**Reduzindoo tamanho da imagem da página principal */
+    .containerImagesHome, 
+    .containerImagesHome img {
+        width: 300px;
+        height: 300px;
+    }
+
+    /**Reduzindoo tamanho do texto da página principal */
+    #containerWelcomeFormat {
+        font-size: 25px;
+        width: 400px;
+    }
+}
+
+@media(max-width: 952px) {
+     /**Reduzindoo tamanho do texto da página principal */
+    #containerWelcomeFormat {
+        font-size: 25px;
+        width: 300px;
+    }
+}
+
+/**Resposividade para móvel */
+@media(max-width: 858px) {
+    /**Ajusta os elementos da principal para posição bloco*/
+    #containerHome {
+        display: block;
+    }
+    
+    /**Reduzindoo tamanho da imagem da página principal */
+    .containerImagesHome {
+        margin: auto;
+    }   
+
+    /**Configuração do texto principal */
+    #containerWelcomeFormat {
+        font-size: 25px;
+        width: 270px;
+        padding-bottom: 15px;
+    }
+
+    /**Remove a segunda imagem em telas menores */
+    .second{
+        display: none;
+    }
+
+    /**Configuração do botão principal do github */
+    .btn-git {
+        margin-top: 25px;
+    }
 }

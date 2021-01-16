@@ -24,13 +24,17 @@
 
 #logo label{
     color: #FFF;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bolder;
 }
 
 #logo img{
     width: 80px;
     height: 80px;
+}
+
+.dev {
+    color: blueviolet;
 }
 
 /**Configuração de estilo do menu */
