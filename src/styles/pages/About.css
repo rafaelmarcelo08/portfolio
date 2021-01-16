@@ -1,0 +1,85 @@
+/**Limpando o fluxo da aplicação */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/**Container principal */
+#containerAbout {
+    background-color: blueviolet;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#conatainerAboutMe {
+    width: 450px;
+    height: 100%;
+    border-style: solid;
+    border-color: white;
+    border-radius: 9px;
+    padding: 30px;
+}
+
+/**Início da formatação do container da imagem da página About */
+.imageAbout img {
+    margin-right: 35px;
+    height: 400px;
+    width: 400px;
+}
+
+
+/**Início da formatação do título sobre mim */
+.titleAboutMe h3 {
+    padding-bottom: 15px;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+/**Início da formatação da história sobre mim */
+.storyMe {
+    color: white;
+}
+
+.storyMe p {
+    width: 400px;
+    
+    font-size: 18px;
+    text-align: justify;  
+}
+
+.myPortfolio {
+    margin-top: 15px;
+    color: white;
+}
+
+.myPortfolio  span{
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+/**Início da formatação do botão de download */
+.styleButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.styleButton a{
+    background-color: white;
+    color: #800080;
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 5px;
+    margin-top: 15px;
+    font-size: 20px;
+    border-radius: 9px;
+    padding: 20px;
+}

@@ -5,6 +5,7 @@ import '../styles/pages/Home.css';
 import NavBar from '../components/NavBar';
 import templateHome from '../assets/images/templateHome.png';
 import rocketHome from '../assets/images/rocketLogo.png';
+import About from './About';
 
 
 class Home extends Component {
@@ -38,9 +39,9 @@ class Home extends Component {
 
                 </div>
 
-
-
+                <About />
             </>
+    
         );
     }
 }
