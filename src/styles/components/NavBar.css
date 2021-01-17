@@ -33,8 +33,10 @@
     height: 80px;
 }
 
-.dev {
+#logo .dev {
     color: blueviolet;
+    font-size: 25px;
+    font-weight: bolder;
 }
 
 /**Configuração de estilo do menu */
@@ -86,7 +88,11 @@ nav ul li a:hover {
 @media(max-width: 952px) {
      /**Setando o tamanho da fonte da logo */
     #logo label{
-        font-size: 20px;
+        font-size: 22px;
+    }
+
+    #logo .dev {
+        font-size: 22px;
     }
 
     /**Removendo espaçamento entre os itens do menu*/
@@ -105,7 +111,11 @@ nav ul li a:hover {
 
     /**Setando o tamanho da fonte da logo */
     #logo label{
-        font-size: 23px;
+        font-size: 22px;
+    }
+
+    #logo .dev {
+        font-size: 22px;
     }
 
     /**Espaçamento entre o icone de menu e borda */
