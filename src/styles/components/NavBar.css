@@ -82,12 +82,12 @@ nav ul li a:hover {
 }
 
 
-/**RESPOSIVIDADE DA APLICAÇÃO MENU*/
+/**RESPOSIVIDADE DA APLICAÇÃO MENU */
 
 /**Resposividade para tablet */
 @media(max-width: 952px) {
      /**Setando o tamanho da fonte da logo */
-    #logo label{
+    #logo label {
         font-size: 22px;
     }
 
@@ -95,7 +95,7 @@ nav ul li a:hover {
         font-size: 22px;
     }
 
-    /**Removendo espaçamento entre os itens do menu*/
+    /**Removendo espaçamento entre os itens do menu */
     ul li {
         margin-right: 9px;
     }
@@ -110,7 +110,7 @@ nav ul li a:hover {
     }
 
     /**Setando o tamanho da fonte da logo */
-    #logo label{
+    #logo label {
         font-size: 22px;
     }
 
@@ -129,12 +129,12 @@ nav ul li a:hover {
     }
 
     /**Espaçamento entre o logo e a borda */
-    #logo{
+    #logo {
         margin-left: 20px;
     }
 
     /**Centralizando a logo no centro do elemento */
-    #logo label{
+    #logo label {
         margin: 0 auto;
     }
 
@@ -144,7 +144,7 @@ nav ul li a:hover {
     }
     
     /**Posicionamento do menu */
-	ul{
+	ul {
         position: fixed; 
         top: 100px;
         left: -100%;
@@ -156,7 +156,7 @@ nav ul li a:hover {
     }
     
     /**Setando o posicionamento do menu e distanciamento */
-	nav ul li{
+	nav ul li {
 		display: block;
 		margin: 50px auto;
     }

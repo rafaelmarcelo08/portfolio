@@ -28,7 +28,7 @@
     height: 45px;
 }
 
-/**Configuração das letras do Footer.js*/
+/**Configuração das letras e imagem do Footer.js */
 #developer {
     font-size: 18px;
 }
@@ -40,17 +40,18 @@
 #developer .dev {
     color: blueviolet;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 18px;
 }
 
 .developer-color {
     color: #50fa7b;
 }
 
-/**RESPOSIVIDADE DA TAG FOOTER*/
+/**RESPOSIVIDADE DA TAG FOOTER */
 
 /**Resposividade para tablet */
 @media(max-width: 952px) {
+    /**Configuração das letras do Footer.js */
     #developer {
         font-size: 16px;
     }
@@ -59,13 +60,14 @@
         font-size: 16px;
     }
     
-    #developer h5 .dev {
+    #developer .dev {
         font-size: 18px;
     }
 }
 
 /**Resposividade para móvel */
-@media(max-width: 858px) { 
+@media(max-width: 858px) {
+    /**Configuração das letras e imagem do Footer.js */ 
     #developer {
         font-size: 14px;
     }
