@@ -101,7 +101,7 @@ nav ul li a:hover {
     }
 }
 
-/**Resposividade para movel */
+/**Resposividade para móvel */
 @media(max-width: 858px) { 
 
     /**Espaçamento entre o icone de menu e a logo */

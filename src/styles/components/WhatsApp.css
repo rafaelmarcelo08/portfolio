@@ -1,0 +1,38 @@
+/**Limpando o fluxo da aplicação*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.whatsApp {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+
+.whatsApp img {
+    height: 60px;
+    width: 60px;
+}
+
+/**RESPOSIVIDADE DA APLICAÇÃO MENU*/
+
+/**Resposividade para móvel */
+@media(max-width: 858px) {
+    .whatsApp {
+        position: fixed;
+        bottom: 50px;
+        right: 14px;
+    }
+    
+    .whatsApp img {
+        height: 50px;
+        width: 50px;
+    }
+ }
+
+
+
+
+
