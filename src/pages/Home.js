@@ -12,7 +12,7 @@ class Home extends Component {
     render() {
         return (
             <>
-                <NavBar />
+                <NavBar/>
 
                 <div id='containerHome'>
 

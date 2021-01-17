@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import '../styles/pages/About.css';
 
 import studyAbout from '../assets/images/studyAbout.png';
-import Curriculo from '../assets/curriculo/Curriculo.pdf';
+import CurriculoRafaelMarcelo from '../assets/curriculo/CurriculoRafaelMarcelo.pdf';
 
 class About extends Component {
     render() {
@@ -23,14 +23,14 @@ class About extends Component {
                         </h3>
                         </div>
 
-                        <div className='storyMe'>
+                        <div className='meStory'>
 
                             <p>
                                 Bem-vindo nessa seção caro leitor, aqui falarei um pouco sobre mim. ok ? <br />
                             Então.. <br />Eu <strong>Rafael Marcelo</strong> sou fanático por tecnologias,
                             e tenho como objetivo construir uma carreira em desenvolvimento web, mobile e desktop,
                             com habilidade em Java, Javascript e PHP.
-                        </p>
+                            </p>
 
                         </div>
 
@@ -41,7 +41,7 @@ class About extends Component {
                         <div className='styleButton'>
 
                             <a
-                                href={Curriculo}
+                                href={CurriculoRafaelMarcelo}
                                 target='_blank'
                                 rel="noreferrer">Meu currículo
                             </a>

@@ -4,35 +4,35 @@
     margin: 0px;
 }
 
-/**Container principal */
+/**Container principal About */
 #containerAbout {
     background-color: blueviolet;
-    margin: 10px;
-    padding: 15px;
     border-radius: 9px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+    padding: 15px;
 }
 
+/**Container principal Sobre Mim */
 #conatainerAboutMe {
-    width: 450px;
+    width: 500px;
     height: 100%;
     border-style: solid;
-    border-color: white;
+    border-color: aliceblue;
     border-radius: 9px;
     padding: 30px;
 }
 
-/**Início da formatação do container da imagem da página About */
+/**Configuração da imagem da tag About */
 .imageAbout img {
     margin-right: 35px;
     height: 400px;
     width: 400px;
 }
 
-
-/**Início da formatação do título sobre mim */
+/**Configuração da tag Titulo de About */
 .titleAboutMe h3 {
     padding-bottom: 15px;
     font-weight: bold;
@@ -41,38 +41,36 @@
     text-align: center;
 }
 
-/**Início da formatação da história sobre mim */
-.storyMe {
-    color: white;
+/**Configuração da sessão Minha Historia de About */
+.meStory {
+    color: aliceblue;
 }
 
-.storyMe p {
-    width: 400px;
-    
-    font-size: 18px;
+.meStory p {
+    font-size: 20px;
     text-align: justify;  
 }
 
+/**Configuração da tag Titulo de Download-Curriculo */
 .myPortfolio {
     margin-top: 15px;
-    color: white;
+    color: aliceblue;
 }
 
-.myPortfolio  span{
+.myPortfolio span {
     font-weight: bolder;
     font-style: italic;
-    font-size: 18px;
+    font-size: 23px;
 }
 
-
-/**Início da formatação do botão de download */
+/**Configuração do botão de Download-Curriculo */
 .styleButton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.styleButton a{
+.styleButton a {
     background-color: white;
     color: #800080;
     text-decoration: none;
@@ -82,4 +80,72 @@
     font-size: 20px;
     border-radius: 9px;
     padding: 20px;
+}
+
+/**RESPOSIVIDADE DA TAG ABOUT */
+
+/**Resposividade para tablet */
+@media(max-width: 930px) {
+    /**Configuração da imagem da tag About */
+    .imageAbout img {
+        height: 300px;
+        width: 300px;
+    }
+
+    /**Configuração do container Sobre Mim */
+    #conatainerAboutMe {
+        width: 490px;
+        height: 100%;
+    }
+
+    /**Configuração da tag Titulo de About */
+    .titleAboutMe h3 {
+        font-size: 25px;
+    }
+  
+    /**Configuração da sessão Minha Historia de About */
+    .meStory p {
+        font-size: 18px;
+    }
+
+    /**Configuração da tag Titulo de Download-Curriculo */
+    .myPortfolio span {
+        font-size: 20px;
+    }
+}
+
+/**Resposividade para móvel */
+@media(max-width: 858px) {
+    /**Container principal About */
+    #containerAbout {
+        display: block;
+    }
+
+    /**Configuração da imagem da tag About */
+    .imageAbout img {
+        margin: auto auto;
+        height: 200px;
+        width: 200px;
+    }
+
+    /**Container principal Sobre Mim */
+    #conatainerAboutMe {
+        margin: 20px auto;
+        width: 300px;
+    }
+
+    /**Configuração da sessão Minha Historia de About */
+    .meStory p {
+        font-size: 15px;
+    }
+
+    /**Configuração da tag Titulo de About */
+    .titleAboutMe h3 {
+        font-size: 20px;
+    }
+
+    /**Configuração da tag Titulo de Download-Curriculo */
+    .myPortfolio span {
+        font-size: 18px;
+    }
 }
