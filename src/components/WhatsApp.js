@@ -8,11 +8,14 @@ class WhatsApp extends Component {
     render() {
         return (
             <>
-
+            
                 <div className='whatsApp'>
-                    <a href='https://web.whatsapp.com/send?phone= +5562981323296' target='_black' rel="noreferrer">
+
+                    <a href="https://api.whatsapp.com/send?phone=5562981323296"
+                        target="_blank" rel="noreferrer" >
                         <img src={whatsappImage} alt='whatsapp' />
                     </a>
+
                 </div>
 
             </>
