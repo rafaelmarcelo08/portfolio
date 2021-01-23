@@ -26,6 +26,7 @@ class NavBar extends Component {
                                 <li><a href="/">Sobre mim</a></li>
                                 <li><a href="/">Resumo</a></li>
                                 <li><a href="/">Conhecimentos</a></li>
+                                <li><a href="/">Projetos</a></li>
                                 <li><a href="/">Contato</a></li>
                             </ul>
 

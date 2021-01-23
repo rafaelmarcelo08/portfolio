@@ -85,9 +85,9 @@ nav ul li a:hover {
 /**RESPOSIVIDADE DA APLICAÇÃO MENU */
 
 /**Resposividade para tablet */
-@media(max-width: 952px) {
+@media(max-width: 1000px) {
      /**Setando o tamanho da fonte da logo */
-    #logo label {
+     #logo label {
         font-size: 22px;
     }
 
@@ -97,7 +97,14 @@ nav ul li a:hover {
 
     /**Removendo espaçamento entre os itens do menu */
     ul li {
-        margin-right: 9px;
+        margin: 15px;
+    }
+}
+
+@media(max-width: 952px) {
+    /**Removendo espaçamento entre os itens do menu */
+    ul li {
+        margin: 12px;
     }
 }
 
