@@ -1,0 +1,131 @@
+/**Limpando o fluxo da aplicação */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/**Configuração padrão do container Resume */
+#containerResume {
+    width: 100%;
+    letter-spacing: 0.5px;
+    font-family: 'Parisienne', cursive;
+}
+
+/**Configuração padrão do titulo */
+.title {
+    margin: 25px 0px;
+    font-size: 50px;
+}
+
+/**Configuração da estrutura da formação acadêmica */
+#resume {
+    background-color: #191a21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    border-radius: 9px;
+    margin: 15px auto;
+    padding: 15px 0px;
+}
+
+/**Configuração do container img */
+#puc-logo {
+    margin: 10px;
+}
+
+/**Configuração da imagem da logo da formação acadêmica */
+#puc-logo  img {
+    width: 200px;
+    height: 150px;
+    border-left: black;
+}
+
+/**Configuração do container curso */
+.course {
+    font-family: monospace;
+    color: aliceblue;
+    text-align: left;
+    margin-left: 15px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+
+/**Configuração do botão diploma */
+.btn-degree {
+    padding: 10px;
+}
+
+.btn-degree a {
+    color: #191a21;
+    background-color: aliceblue;
+    border-radius: 9px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bolder;
+    padding: 0px 10px;
+}
+
+.btn-degree a:hover {
+    color:white;
+    background-color: #1d3c85;
+}
+
+
+/**RESPOSIVIDADE DA TAG RESUME */
+
+/**Resposividade para tablet */
+@media(max-width: 952px) {
+    /**Configuração padrão do titulo */
+    .title {
+        font-size: 45px;
+    }
+
+    /**Configuração da estrutura da formação acadêmica */
+    #resume {
+        width: 500px;
+    }
+
+    /**Configuração da imagem da logo da formação acadêmica */
+    #puc-logo  img {
+        width: 150px;
+        height: 100px;
+        border-left: black;
+    }
+
+    /**Configuração do container curso */
+    .course { 
+        font-size: 14px;
+    }
+
+    /**Configuração do botão diploma */
+    .btn-degree a {
+        font-size: 28px;
+    }
+}
+
+/**Resposividade para móvel */
+@media(max-width: 858px) {
+    /**Configuração padrão do titulo */
+    .title {
+        font-size: 35px;
+    }
+
+    /**Configuração da estrutura da formação acadêmica */
+    #resume {
+        width: 340px;
+        display: block;
+    }
+
+    /**Configuração do container curso */
+    .course { 
+        font-size: 11px;
+        margin: 0px 15px;
+    }
+
+    /**Configuração do botão diploma */
+    .btn-degree a {
+        font-size: 25px;
+    }
+}
