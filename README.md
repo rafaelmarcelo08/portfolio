@@ -1,4 +1,4 @@
-## Projeto desenvolvido com JavaFx
+## Projeto desenvolvido ReactJS
 
 ## 💻 Sobre o projeto
 
