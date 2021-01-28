@@ -1,0 +1,100 @@
+/**Limpando o fluxo da aplicação*/
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/**Configuração padrão do container knowledge */
+#containerKnowledge {
+    color: aliceblue;
+    background-color: #282a36;
+}
+
+/**Configuração padrão do titulo */
+.titleKnowledge {
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: bolder;
+    padding: 30px;
+    margin-left: 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/**Configuração padrão do subtitulo */
+.subtitle {
+    margin: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/**Configuração padrão do container de tecnologias */
+.technologies {
+    width: 100%;
+    padding: 20px;
+}
+
+/**Configuração padrão do container de tecnologias secundario */
+.technologies .second {
+    width: 250px;
+}
+
+/**Configuração padrão do imagens de tecnologias */
+.technologies img {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+/**RESPOSIVIDADE DA TAG KNOWLEDGE */
+
+/**Resposividade para tablet */
+@media(max-width: 1210px) { 
+    /**Configuração padrão do titulo */
+    .titleKnowledge {
+        font-size: 30px;
+    }
+    /**Configuração padrão do subtitulo */
+    .subtitle {
+        font-size: 20px;
+    }
+
+    /**Configuração padrão do imagens de tecnologias */
+    .technologies img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media(max-width: 952px) {
+    /**Configuração padrão do titulo */
+    .titleKnowledge {
+        font-size: 25px;
+    }
+
+    /**Configuração padrão do imagens de tecnologias */
+    .technologies img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+/**Resposividade para móvel */
+@media(max-width: 858px) {
+    /**Configuração padrão do titulo */
+    .titleKnowledge {
+        font-size: 18px;
+    }
+
+    /**Configuração padrão do subtitulo */
+    .subtitle {
+        font-size: 14px;
+    }
+
+    /**Configuração padrão do imagens de tecnologias */
+    .technologies img {
+        width: 70px;
+        height: 70px;
+    }    
+}

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import '../styles/components/Footer.css';
 
-import socialLogoGit from '../assets/images/socialLogoGit.png';
+import socialLogoGitHub from '../assets/images/socialLogoGitHub.png';
 import linkedin from '../assets/images/linkedin.png';
 
 class Footer extends Component {
@@ -18,7 +18,7 @@ class Footer extends Component {
                         </a>
 
                         <a href='https://github.com/rafaelmarcelo08' target='_blank' rel="noreferrer">
-                            <img src={socialLogoGit} alt='socialLogo' />
+                            <img src={socialLogoGitHub} alt='socialLogo' />
                         </a>
                     </div>
 

@@ -9,6 +9,7 @@ import About from './About';
 import Footer from '../components/Footer';
 import WhatsApp from '../components/WhatsApp';
 import Resume from './Resume';
+import Knowledge from './Knowledge';
 
 class Home extends Component {
     render() {
@@ -44,6 +45,8 @@ class Home extends Component {
                 <About />
 
                 <Resume />
+
+                <Knowledge />
 
                 <Footer />
                 
