@@ -18,14 +18,10 @@ import css from '../assets/images/technologies/css.png';
 /**Banco de dados */
 import mysql from '../assets/images/technologies/mysql.png';
 
-/**Desenvolvedor do software: */
-import github from '../assets/images/socialLogoGitHub.png';
-
 /**Software */
 import node from '../assets/images/technologies/node.png';
-import android from '../assets/images/technologies/android.png';
 import git from '../assets/images/technologies/git.png';
-import hibernate from '../assets/images/technologies/hibernate.png';
+import github from '../assets/images/socialLogoGitHub.png';
 import windows from '../assets/images/technologies/windows.png';
 import ubuntu from '../assets/images/technologies/ubuntu.png';
 import heidisql from '../assets/images/technologies/heidisql.png';
@@ -88,34 +84,22 @@ class Knowledge extends Component {
                         </div>
 
                         <div className='subtitle'>
-                            Desenvolvedor do software:
-                        </div>
-
-                        <div className='technologies'>
-
-                            <img src={github} alt='github' />
-
-                        </div>
-
-                        <div className='subtitle'>
                             Software:
                         </div>
 
                         <div className='technologies'>
 
                             <img src={node} alt='node' />
-                            <img src={android} alt='android' />
                             <img src={git} alt='git' />
                             <img src={windows} alt='windows' />
                             <img src={ubuntu} alt='ubuntu' />
-                            <img src={hibernate} alt='hibernate' className='second' />
+                            <img src={github} alt='github' />
                             <img src={heidisql} alt='heidisql' />
                             <img src={apache} alt='apache' />
                             
                         </div>
 
                     </div>
-
 
                 </div>
             </>
