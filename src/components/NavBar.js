@@ -27,7 +27,6 @@ class NavBar extends Component {
                                 <li><a href="/">Resumo</a></li>
                                 <li><a href="/">Conhecimentos</a></li>
                                 <li><a href="/">Projetos</a></li>
-                                <li><a href="/">Contato</a></li>
                             </ul>
 
                         </nav>

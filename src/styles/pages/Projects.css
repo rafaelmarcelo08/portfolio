@@ -1,0 +1,40 @@
+/**Limpando o fluxo da aplicação */
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+/**Configuração padrão do container Projects */
+#containerProjects {
+    background-color: #191a21;
+    color: aliceblue;
+    height: 300px;
+    width: 100%;
+}
+
+/**Configuração padrão do titulo */
+.titleProjects {
+    font-family: 'Parisienne', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+    padding: 30px;
+    margin-left: 20px;
+}
+
+/**RESPOSIVIDADE DA TAG PROJECTS */
+
+/**Resposividade para tablet */
+@media(max-width: 952px) {
+    /**Configuração padrão do titulo */
+    .titleProjects {  
+        font-size: 40px;
+    }
+}
+
+/**Resposividade para móvel */
+@media(max-width: 858px) {
+   /**Configuração padrão do titulo */
+    .titleProjects {  
+        font-size: 35px;
+    }
+}
