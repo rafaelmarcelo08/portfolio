@@ -27,6 +27,26 @@ Este projeto foi criado com o intuído de mostrar os projetos que já foram dese
 
 ## 🚀 Como executar o projeto
 
+Para baixar o repositório local: 
+
+```bash
+git clone
+```
+Para instalar as dependências execulte o comando:
+
+```bash
+npm install
+```
+ou 
+```bash
+yarn install
+```
+
+Para rodar a aplicação execute:
+```bash
+yarn start
+```
+
 ## 📝 Licença
 
 Este projeto está sobe a licença <strong>Rafael Marcelo</strong>
