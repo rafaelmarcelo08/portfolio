@@ -25,20 +25,13 @@ class Projects extends Component {
 
                         </div>
 
-
-
-
                         <div className='boxTitle'>
                             Consulta CEP - React JS
                         </div>
 
                     </div>
 
-
-
-
                 </div>
-
             </>
         );
     }
