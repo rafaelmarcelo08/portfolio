@@ -21,6 +21,11 @@ class Projects extends Component {
                                 href='/'
                                 target='_blank'
                                 rel="noreferrer">
+
+                                <div className='nameProject'>
+                                    <h3>CEP</h3>
+                                </div>
+
                             </a>
 
                         </div>
