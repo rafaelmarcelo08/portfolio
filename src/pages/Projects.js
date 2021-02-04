@@ -14,8 +14,28 @@ class Projects extends Component {
                     </div>
 
                     <div className='boxProjects'>
-                       Você não possui nenhum projeto ainda.
+
+                        <div className='box'>
+
+                            <a
+                                href='/'
+                                target='_blank'
+                                rel="noreferrer">
+                            </a>
+
+                        </div>
+
+
+
+
+                        <div className='boxTitle'>
+                            Consulta CEP - React JS
+                        </div>
+
                     </div>
+
+
+
 
                 </div>
 
