@@ -34,8 +34,9 @@
     height: 300px;
     display: block;
     margin: auto;
+    border-radius: 9px;
     background-color: #34af23;
-    background-image: linear-gradient(to bottom, transparent, rgba(0,0,255,.5));
+    background-image: linear-gradient(to bottom, transparent, rgba(90, 100, 150, 0.5));
     text-decoration: none;
 }
 
