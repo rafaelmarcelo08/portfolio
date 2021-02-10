@@ -18,7 +18,7 @@ class Projects extends Component {
                         <div className='box'>
 
                             <a
-                                href='http://consulta-cep-web.herokuapp.com/'
+                                href='https://consulta-cep-web.herokuapp.com/'
                                 target='_blank'
                                 rel="noreferrer">
 
