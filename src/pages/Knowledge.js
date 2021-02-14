@@ -34,7 +34,7 @@ class Knowledge extends Component {
                 <div id='containerKnowledge'>
 
                     <div className='titleKnowledge'>
-                        Aqui está algumas tecnologias que já utilizei
+                        Aqui estão algumas tecnologias que já utilizei
                     </div>
 
                     <div>
