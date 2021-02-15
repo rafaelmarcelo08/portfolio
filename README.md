@@ -44,9 +44,13 @@ yarn install
 
 Para rodar a aplicação execute:
 ```bash
+npm start
+```
+ou 
+```bash
 yarn start
 ```
 
 ## 📝 Licença
 
-Este projeto está sobe a licença <strong>Rafael Marcelo</strong>
+Este projeto está sobe a licença de <strong>Rafael Marcelo</strong>
