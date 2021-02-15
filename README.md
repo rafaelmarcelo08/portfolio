@@ -2,7 +2,7 @@
 
 ## Projeto desenvolvido com ReactJS🚀
 
-## 💻 Sobre o projeto
+## 📚 Sobre o projeto
 
 <p>
 Este projeto foi criado com o intuído de mostrar os projetos que já foram desenvolvidos por <strong>Rafael Marcelo</strong>, o mesmo será hospedado nas nuvens. A plataforma de hospedagem que será utilizado neste projeto será o Heroku. A cada projeto que for finalizado será criado um link no portfólio na área de projetos com a referência do projeto, todos os projetos   serão expostos nas nuvens. O código do projeto será disponível para download para qualquer pessoa que tiver interesse em olhar o código fonte.
