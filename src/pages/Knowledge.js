@@ -26,6 +26,7 @@ import windows from '../assets/images/technologies/windows.png';
 import ubuntu from '../assets/images/technologies/ubuntu.png';
 import heidisql from '../assets/images/technologies/heidisql.png';
 import apache from '../assets/images/technologies/apache.png';
+import figma from '../assets/images/technologies/figma.png';
 
 class Knowledge extends Component {
     render() {
@@ -96,7 +97,8 @@ class Knowledge extends Component {
                             <img src={github} alt='github' />
                             <img src={heidisql} alt='heidisql' />
                             <img src={apache} alt='apache' />
-                            
+                            <img src={figma} alt='figma' />
+
                         </div>
 
                     </div>
