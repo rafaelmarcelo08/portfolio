@@ -9,6 +9,7 @@ import About from './About';
 import Footer from '../components/Footer';
 import WhatsApp from '../components/WhatsApp';
 import Resume from './Resume';
+import Certificates from './Certificates';
 import Knowledge from './Knowledge';
 import Projects from './Projects';
 
@@ -46,6 +47,8 @@ class Home extends Component {
                 <About />
 
                 <Resume />
+
+                <Certificates />
 
                 <Knowledge />
 
