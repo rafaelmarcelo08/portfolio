@@ -27,6 +27,8 @@ import ubuntu from '../assets/images/technologies/ubuntu.png';
 import heidisql from '../assets/images/technologies/heidisql.png';
 import apache from '../assets/images/technologies/apache.png';
 import figma from '../assets/images/technologies/figma.png';
+import postgres from '../assets/images/technologies/postgres.png';
+
 
 class Knowledge extends Component {
     render() {
@@ -98,6 +100,7 @@ class Knowledge extends Component {
                             <img src={heidisql} alt='heidisql' />
                             <img src={apache} alt='apache' />
                             <img src={figma} alt='figma' />
+                            <img src={postgres} alt='postgres' />
 
                         </div>
 
