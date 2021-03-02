@@ -55,6 +55,11 @@
     color: black;
 }
 
+/**Configuração de alteração da cor dos dots */
+.slick-dots li.slick-active button:before {
+    color:aliceblue !important;
+}
+
 /**RESPOSIVIDADE DA TAG PROJECTS */
 
 /**Resposividade para tablet */
