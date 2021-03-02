@@ -9,7 +9,6 @@ import Slider from "react-slick";
 class Projects extends Component {
     render() {
 
-
         const settings = {
             dots: true,
             fade: true,
@@ -18,7 +17,6 @@ class Projects extends Component {
             slidesToShow: 1,
             slidesToScroll: 1
         };
-
 
         return (
             <>
@@ -32,16 +30,34 @@ class Projects extends Component {
                     </div>
 
                     <div className='boxProjects'>
-                        
+
                         <Slider {...settings}>
 
                             <div className='box'>
-                                <h3>1</h3>
+
+                                <label>
+                                    <a
+                                        href='https://consulta-cep-web.herokuapp.com/'
+                                        target='_blank'
+                                        rel="noreferrer">CEP
+                                    </a>
+                                </label>
+
                             </div>
 
                             <div className='box'>
-                                <h3>2</h3>
+
+                                <label>
+                                    <a
+                                        href='https://consulta-cep-web.herokuapp.com/'
+                                        target='_blank'
+                                        rel="noreferrer">CEP
+                                    </a>
+                                </label>
+
                             </div>
+
+
 
                         </Slider>
 
