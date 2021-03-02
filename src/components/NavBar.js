@@ -16,7 +16,7 @@ class NavBar extends Component {
 
                     <div className='control-menu'>
 
-                        <nav>
+                        <nav className='navbar'>
 
                             <input type='checkbox' id='check-btn' />
                             <label for='check-btn' className='btn-menu'>&#9776;</label>

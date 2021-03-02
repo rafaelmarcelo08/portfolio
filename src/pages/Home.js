@@ -6,7 +6,7 @@ import NavBar from '../components/NavBar';
 import templateHome from '../assets/images/templateHome.png';
 import rocketHome from '../assets/images/rocketLogo.png';
 import About from './About';
-import Footer from '../components/Footer';
+//import Footer from '../components/Footer';
 import WhatsApp from '../components/WhatsApp';
 import Resume from './Resume';
 import Certificates from './Certificates';
@@ -17,7 +17,7 @@ class Home extends Component {
     render() {
         return (
             <>
-                <NavBar/>
+                <NavBar />
 
                 <div id='containerHome'>
 
@@ -54,7 +54,7 @@ class Home extends Component {
 
                 <Projects />
 
-                <Footer />
+                
                 
                 <WhatsApp />
             </>
