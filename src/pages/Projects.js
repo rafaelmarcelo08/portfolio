@@ -37,7 +37,7 @@ class Projects extends Component {
 
                                 <label>
                                     <a
-                                        href='https://consulta-cep-web.herokuapp.com/'
+                                        href='https://cepconsulta.netlify.app/'
                                         target='_blank'
                                         rel="noreferrer">CEP
                                     </a>
@@ -49,15 +49,13 @@ class Projects extends Component {
 
                                 <label>
                                     <a
-                                        href='https://consulta-cep-web.herokuapp.com/'
+                                        href='https://cepconsulta.netlify.app/'
                                         target='_blank'
                                         rel="noreferrer">CEP
                                     </a>
                                 </label>
 
                             </div>
-
-
 
                         </Slider>
 
