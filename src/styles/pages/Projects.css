@@ -27,7 +27,6 @@
 
 /**Configuração caixa de projetos */
 .boxProjects {
-    margin: 20px;
     width: 850px;
     height: 350px;
 }
@@ -57,11 +56,6 @@
     /**Configuração caixa de projetos */
     .boxProjects {
         width: 600px;
-        height: 280px;
-    }
-
-    /**Configuração do tamanho do Slick */
-    .box {
         height: 280px;
     }
 }

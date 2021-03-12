@@ -10,17 +10,13 @@ function ModelProjects(props) {
 
                 <header id='headerTitle'>
 
-
                     {props.content.title}
-
 
                 </header>
 
                 <main id='main'>
 
-                    <label>
-                        {props.content.description}
-                    </label>
+                    {props.content.description}
 
                 </main>
 
