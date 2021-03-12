@@ -27,6 +27,7 @@
 
 /**Configuração caixa de projetos */
 .boxProjects {
+    margin: 20px;
     width: 850px;
     height: 350px;
 }
@@ -37,27 +38,6 @@
     font-weight: bolder;
     font-size: 25px;
     margin: 10px;
-}
-
-/**Configuração do tamanho do Slick */
-.box {
-    width: 100%;
-    height: 350px;
-}
-
-/**Configuração padrão do layout do slick */
-.box label a {
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: aliceblue;
-    color: black;
-    font-weight: bolder;
-    font-size: 30px;
-    border-radius: 15px;
 }
 
 /**Configuração de alteração da cor dos dots */

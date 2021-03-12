@@ -5,6 +5,8 @@ import '../styles/pages/Projects.css';
 import 'slick-carousel/slick/slick.css';
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import objects from '../util/Objects';
+import ModelProjects from '../components/ModelProjects';
 
 class Projects extends Component {
     render() {
@@ -32,31 +34,15 @@ class Projects extends Component {
                     <div className='boxProjects'>
 
                         <Slider {...settings}>
+                            {
 
-                            <div className='box'>
+                                objects.map(object => {
+                                    return (
+                                        <ModelProjects content={object} />
+                                    );
+                                })
 
-                                <label>
-                                    <a
-                                        href='https://cepconsulta.netlify.app/'
-                                        target='_blank'
-                                        rel="noreferrer">CEP
-                                    </a>
-                                </label>
-
-                            </div>
-
-                            <div className='box'>
-
-                                <label>
-                                    <a
-                                        href='https://cepconsulta.netlify.app/'
-                                        target='_blank'
-                                        rel="noreferrer">CEP
-                                    </a>
-                                </label>
-
-                            </div>
-
+                            }
                         </Slider>
 
                     </div>
