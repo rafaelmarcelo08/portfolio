@@ -38,7 +38,7 @@ class Projects extends Component {
 
                                 objects.map(object => {
                                     return (
-                                        <ModelProjects content={object} />
+                                        <ModelProjects content={object} key = {object.id}/>
                                     );
                                 })
 
