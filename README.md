@@ -1,4 +1,4 @@
-### [Veja o app rodando](https://rafaelmarcelo08.herokuapp.com/)
+### [Veja o app rodando](https://rafaelmarcelo08.netlify.app/)
 
 ## Projeto desenvolvido com ReactJS🚀
 
