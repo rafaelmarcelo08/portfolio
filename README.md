@@ -30,7 +30,7 @@ Este projeto foi criado com o intuído de mostrar os projetos que já foram dese
 Para baixar o repositório local: 
 
 ```bash
-git clone
+git clone https://github.com/rafaelmarcelo08/portfolio.git
 ```
 Para instalar as dependências execulte o comando:
 
