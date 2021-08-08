@@ -1,4 +1,5 @@
 ### [Veja o app rodando](https://rafaelmarcelo08.netlify.app/)
+![Netlify Status](https://api.netlify.com/api/v1/badges/94f8a470-f5dc-4d97-bf4a-2c69e20bec2f/deploy-status)
 
 ## Projeto desenvolvido com ReactJS🚀
 
