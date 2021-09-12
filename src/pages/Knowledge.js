@@ -6,11 +6,12 @@ import '../styles/pages/Knowledge.css';
 import html from '../assets/images/technologies/html.png';
 import javascript from '../assets/images/technologies/javascript.png';
 import java from '../assets/images/technologies/java.png';
-import php from '../assets/images/technologies/php.png';
+import typescript from '../assets/images/technologies/typescript.png';
 
 /**Frameworks */
 import reactJs from '../assets/images/technologies/reactJs.png';
 import springBoot from '../assets/images/technologies/springBoot.png';
+import angular from '../assets/images/technologies/angular.svg';
 
 /**Estilização */
 import css from '../assets/images/technologies/css.png';
@@ -51,7 +52,7 @@ class Knowledge extends Component {
                             <img src={html} alt='html' />
                             <img src={javascript} alt='javascript' />
                             <img src={java} alt='java' />
-                            <img src={php} alt='php' />
+                            <img src={typescript} alt='typescript' />
 
                         </div>
 
@@ -63,6 +64,7 @@ class Knowledge extends Component {
 
                             <img src={reactJs} alt='reactJs' />
                             <img src={springBoot} alt='springBoot' />
+                            <img src={angular} alt='angular' />
 
                         </div>
 
