@@ -22,9 +22,7 @@ class Resume extends Component {
 
                             <div className='course'>
 
-                                <h3>Análise e Desenvolvimento de Sistemas</h3>
-                                <h3>Período: 6</h3>
-                                <h3>Noturno</h3>
+                                <h3>Formado em Análise e Desenvolvimento de Sistemas</h3>
 
                             </div>
 
