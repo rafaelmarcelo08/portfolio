@@ -24,7 +24,7 @@ class Footer extends Component {
 
                     <div id='developer'>
                         <span>
-                            © <strong> { new Date() } </strong> Copyright - Feito por <strong className='developer-color'>Rafael Marcelo</strong> -
+                            © <strong> 2022 </strong> Copyright - Feito por <strong className='developer-color'>Rafael Marcelo</strong> -
                         </span>
 
                         <h5 className='logo'>Rocket<span className='dev'>Dev</span></h5>
