@@ -1,12 +1,9 @@
+/* Estilos básicos */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
-}
-
-body {
-  min-height: 200vh;
 }
 
 header {
@@ -18,46 +15,42 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: 0.7s;
-  padding: 37px 100px;
+  padding: 37px 20px; /* Ajuste no padding inicial para responsividade */
 }
 
 header.sticky {
-  padding: 7px 100px;
+  padding: 7px 20px;
   background: white;
 }
 
 header .logo {
-  position: relative;
   font-weight: 700;
   color: white;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.7s;
 }
 
 header nav ul {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 15px;
 }
 
 header nav ul li {
-  position: relative;
   list-style: none;
 }
 
 header nav ul li a {
-  position: relative;
-  margin: 0 15px;
-  text-decoration: none;
   color: white;
   letter-spacing: 1px;
-  font-size: 18px;
-  font-weight: 700px;
+  font-size: 16px;
+  font-weight: 700;
   transition: 0.7s;
+  text-decoration: none;
 }
 
 header nav ul li a:hover {
@@ -72,6 +65,63 @@ header.sticky ul li a {
 .banner {
   width: 100%;
   height: 100vh;
-  // background: url("assets/background.jpg");
   background-size: cover;
+}
+
+/* Responsividade usando breakpoints do Tailwind */
+
+/* sm (mínimo de 640px) */
+@media (min-width: 640px) {
+  header {
+    padding: 37px 50px;
+  }
+  header .logo {
+    font-size: 1.8em;
+  }
+}
+
+/* md (mínimo de 768px) */
+@media (min-width: 768px) {
+  header {
+    padding: 37px 80px;
+  }
+  header .logo {
+    font-size: 2em;
+  }
+}
+
+/* lg (mínimo de 1024px) */
+@media (min-width: 1024px) {
+  header {
+    padding: 37px 100px;
+  }
+  header nav ul li a {
+    font-size: 18px;
+  }
+}
+
+/* xl (mínimo de 1280px) */
+@media (min-width: 1280px) {
+  header {
+    padding: 37px 120px;
+  }
+  header .logo {
+    font-size: 1.5em;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+}
+
+/* 2xl (mínimo de 1536px) */
+@media (min-width: 1536px) {
+  header {
+    padding: 37px 140px;
+  }
+  header .logo {
+    font-size: 2.5em;
+  }
+  header nav ul li a {
+    font-size: 22px;
+  }
 }

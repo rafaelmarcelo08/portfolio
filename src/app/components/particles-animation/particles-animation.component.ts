@@ -1,11 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { NgParticlesService } from '@tsparticles/angular';
 import { animate, style, transition, trigger } from '@angular/animations';
-import {
-  IOptions,
-  InteractivityDetect,
-  MoveDirection,
-} from '@tsparticles/engine';
+import { Component } from '@angular/core';
+import { NgParticlesService } from '@tsparticles/angular';
+import { InteractivityDetect, MoveDirection } from '@tsparticles/engine';
 import { loadSlim } from '@tsparticles/slim';
 
 @Component({
@@ -21,10 +17,10 @@ import { loadSlim } from '@tsparticles/slim';
     ]),
   ],
 })
-export class ParticlesAnimationComponent implements OnInit {
+export class ParticlesAnimationComponent {
   id = 'tsparticles';
   particlesOptions = {
-    fpsLimit: 24,
+    fpsLimit: 144,
     interactivity: {
       detectsOn: 'window' as InteractivityDetect,
       events: {
@@ -45,11 +41,11 @@ export class ParticlesAnimationComponent implements OnInit {
     },
     particles: {
       color: {
-        value: '#982FCB',
+        value: '#50fa7b',
         opacity: 0.3,
       },
       links: {
-        color: '#ffffff',
+        color: '#F8F8F2',
         distance: 150,
         enable: true,
         opacity: 0.3,
