@@ -1,23 +1,46 @@
 <div class="container">
-  <div class="name teste">
-    <p>
-      <!-- <ngx-typed-writer
-        [strings]="[
-          'Criado da rocketDev',
-          'Desenvolvedor Full Stack',
-          'Analista de Sistemas',
-          'Apaixonado por tecnologia'
-        ]"
-        [cursorChar]="'.'"
-        [showCursor]="true"
-        [backSpeed]="30"
-        [typeSpeed]="100"
-        [backDelay]="3000"
-      >
-      </ngx-typed-writer> -->
-    </p>
+  <div class="photo">
+    <img
+      src="assets/image/rafael.png"
+      alt="Foto de Perfil"
+      class="profile-photo"
+    />
   </div>
-  <div class="photo teste">
-    <span>my photo</span>
+  <div class="name">
+    <p class="title shake">
+      <ngx-typed2
+        [strings]="[
+          'Desenvolvedor Full Stack',
+          'Especialista em Angular e NestJS',
+          'Proficiente em Tailwind CSS e PostgreSQL',
+          'Entusiasta de tecnologia e inovação',
+          'Amante de desafios e aprendizado contínuo',
+          'Focado em entregar soluções de qualidade',
+          'Aspirante a se destacar no front-end',
+          'Sempre buscando melhorar o UX/UI'
+        ]"
+        [typeSpeed]="60"
+        [backSpeed]="30"
+        [loop]="true"
+        [showCursor]="true"
+        cursorChar="●"
+      ></ngx-typed2>
+    </p>
+    <div class="social-buttons">
+      <a
+        href="https://github.com/rafaelmarcelo08"
+        target="_blank"
+        class="social-btn github"
+      >
+        <fa-icon [icon]="faGithub"></fa-icon> GitHub
+      </a>
+      <a
+        href="https://www.linkedin.com/in/rafaelmarcelo08/"
+        target="_blank"
+        class="social-btn linkedin"
+      >
+        <fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn
+      </a>
+    </div>
   </div>
 </div>
