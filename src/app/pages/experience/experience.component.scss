@@ -1,0 +1,108 @@
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1000px;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+.experience-container h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.separator {
+  width: 100%;
+  max-width: 1500px;
+  height: 4px;
+  background: linear-gradient(to right, #50fa7b, transparent);
+  border-radius: 2px;
+  margin: 10px 0 20px;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  background-color: #2a2a3c;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.sidebar-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: 1px solid #ffffff;
+  padding: 10px;
+  border-radius: 8px;
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.sidebar-button img {
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.sidebar-button span {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.sidebar-button:hover {
+  background-color: #3e3e5a;
+  transform: translateX(5px);
+}
+
+.sidebar-button.active {
+  background-color: #50fa7b;
+  color: #000000;
+}
+
+.job-details-container {
+  flex: 1;
+  background-color: #2a2a3c;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.job-details {
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+
+.job-details .title h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.activity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.activity fa-icon {
+  color: #50fa7b;
+}

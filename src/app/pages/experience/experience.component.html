@@ -1,0 +1,50 @@
+<div class="experience-container" data-aos="flip-up">
+  <h2>Experiência</h2>
+  <div class="separator"></div>
+
+  <div class="experience-content">
+    <!-- Botão Lateral -->
+    <div class="sidebar">
+      <button
+        class="sidebar-button"
+        *ngFor="let job of jobs"
+        (click)="selectJob(job)"
+        [class.active]="selectedJob === job"
+      >
+        <img [src]="job.icon" alt="empresa" width="30" height="30" />
+        <span>{{ job.company }}</span>
+      </button>
+    </div>
+
+    <!-- Detalhes da Experiência -->
+    <div class="job-details-container" *ngIf="selectedJob">
+      <mat-card class="job-details" [@fadeIn]>
+        <mat-card-header>
+          <mat-card-title class="title">
+            <h3>
+              {{ selectedJob.position }}
+              <strong>| {{ selectedJob.company }}</strong>
+            </h3>
+            <p>
+              {{ selectedJob.type }} - {{ selectedJob.startDate }} a
+              {{ selectedJob.endDate }}
+            </p>
+            <p><strong>Duração:</strong> {{ selectedJob.duration }}</p>
+          </mat-card-title>
+        </mat-card-header>
+        <div class="separator"></div>
+        <mat-card-content>
+          <div
+            *ngFor="let description of selectedJob.description"
+            class="activity"
+          >
+            <fa-icon [icon]="faCodeCommit"></fa-icon>
+            <p>
+              {{ description }}
+            </p>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>
