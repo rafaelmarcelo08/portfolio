@@ -1,0 +1,43 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1500px;
+  background-color: #1e1e2f; /* Fundo mais escuro */
+  color: #ffffff;
+  border-radius: 0; /* Remove as bordas arredondadas */
+}
+
+.about-me-container h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Separator com degradê e bordas arredondadas */
+.separator {
+  width: 100%; /* Ajusta o separador para ocupar toda a largura do container */
+  max-width: 1500px; /* Define um máximo para a largura do separador */
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #00ff00,
+    transparent
+  ); /* Degradê à direita */
+  border-radius: 2px;
+  margin: 10px 0 20px;
+}
+
+.about-me-container p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.about-me-container strong {
+  color: #00ff00; /* Cor verde para o destaque */
+}
