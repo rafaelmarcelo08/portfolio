@@ -76,7 +76,7 @@
 }
 
 .shake {
-  animation: shake 6s; /* Efeito de tremor constante */
+  animation: shake 6s;
   animation-iteration-count: infinite;
 }
 
@@ -107,6 +107,10 @@
 
 .social-btn.linkedin {
   background-color: #0077b5;
+}
+
+.social-btn.resume {
+  background-color: #4caf50; /* Verde para o botão de Currículo */
 }
 
 /* Efeito de Hover */
