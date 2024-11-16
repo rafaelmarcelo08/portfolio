@@ -5,7 +5,7 @@
   text-align: justify;
   margin: 40px auto;
   padding: 20px;
-  max-width: 1500px;
+  max-width: 1000px;
   background-color: #1e1e2f; /* Fundo mais escuro */
   color: #ffffff;
   border-radius: 0; /* Remove as bordas arredondadas */
@@ -25,7 +25,7 @@
   height: 4px;
   background: linear-gradient(
     to right,
-    #00ff00,
+    #50fa7b,
     transparent
   ); /* Degradê à direita */
   border-radius: 2px;
@@ -39,5 +39,5 @@
 }
 
 .about-me-container strong {
-  color: #00ff00; /* Cor verde para o destaque */
+  color: #50fa7b; /* Cor verde para o destaque */
 }

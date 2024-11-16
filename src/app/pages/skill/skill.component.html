@@ -1,0 +1,24 @@
+<div class="skill-container">
+  <h2>Habilidades</h2>
+  <div class="separator"></div>
+  <h3>
+    Tenho experiência prática no desenvolvimento de projetos utilizando essas
+    tecnologias!
+  </h3>
+
+  <div class="skill-grid" data-aos="flip-up">
+    <mat-card
+      [attr.data-aos]="skill.aosAnimation"
+      *ngFor="let skill of mySkills"
+    >
+      <img
+        mat-card-image
+        [src]="skill.icon"
+        width="45"
+        height="45"
+        [alt]="skill.alt"
+      />
+      <h4>{{ skill.name }}</h4>
+    </mat-card>
+  </div>
+</div>

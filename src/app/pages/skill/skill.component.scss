@@ -1,0 +1,74 @@
+.skill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: justify;
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 1000px;
+  background-color: #1e1e2f; /* Fundo mais escuro */
+  color: #ffffff;
+  border-radius: 0; /* Remove as bordas arredondadas */
+}
+
+.skill-container h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Separator com degradê e bordas arredondadas */
+.separator {
+  width: 100%; /* Ajusta o separador para ocupar toda a largura do container */
+  max-width: 1500px; /* Define um máximo para a largura do separador */
+  height: 4px;
+  background: linear-gradient(
+    to right,
+    #50fa7b,
+    transparent
+  ); /* Degradê à direita */
+  border-radius: 2px;
+  margin: 10px 0 20px;
+}
+
+/* Estilo da grade de habilidades */
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsivo */
+  gap: 20px; /* Espaço entre os itens */
+  width: 100%; /* Ocupar toda a largura do container */
+  max-width: 1500px; /* Define um máximo para a largura */
+  margin-top: 20px;
+}
+
+mat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #50fa7b;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  /* Animação de hover */
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(139, 0, 255, 0.5);
+  }
+}
+
+mat-card h4 {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+mat-card img {
+  max-width: 45px;
+  max-height: 45px;
+}

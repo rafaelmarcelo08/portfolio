@@ -6,6 +6,7 @@ import { HomeComponent } from './home.component';
 import { ParticlesAnimationModule } from 'src/app/components/particles-animation/particles-animation.module';
 import { ProfileModule } from '../profile/profile.module';
 import { AboutMeModule } from '../about-me/about-me.module';
+import { SkillModule } from '../skill/skill.module';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -15,6 +16,7 @@ import { AboutMeModule } from '../about-me/about-me.module';
     ParticlesAnimationModule,
     ProfileModule,
     AboutMeModule,
+    SkillModule,
   ],
   exports: [HomeComponent],
 })
