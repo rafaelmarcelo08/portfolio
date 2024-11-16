@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as moment from 'moment';
 import { faCodeCommit } from '@fortawesome/free-solid-svg-icons';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 import { JOBS } from 'src/app/shared/constants/jobs.constant';
 import { JobInterface } from './interface/job.interface';
@@ -9,6 +10,14 @@ import { JobInterface } from './interface/job.interface';
   selector: 'app-experience',
   templateUrl: './experience.component.html',
   styleUrls: ['./experience.component.scss'],
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate('300ms ease-in', style({ opacity: 1 })),
+      ]),
+    ]),
+  ],
 })
 export class ExperienceComponent implements OnInit {
   public jobs = JOBS;

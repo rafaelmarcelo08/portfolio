@@ -143,4 +143,16 @@ export const MY_SKILLS = [
     alt: 'Logo do Handlebars',
     aosAnimation: 'zoom-out-down',
   },
+  {
+    name: 'HTML',
+    icon: 'assets/icons/html.icon.svg',
+    alt: 'Logo do HTML',
+    aosAnimation: 'zoom-out-down',
+  },
+  {
+    name: 'CSS',
+    icon: 'assets/icons/css.icon.svg',
+    alt: 'Logo do CSS',
+    aosAnimation: 'zoom-out-down',
+  },
 ];

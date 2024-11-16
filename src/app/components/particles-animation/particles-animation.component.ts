@@ -89,7 +89,6 @@ export class ParticlesAnimationComponent {
 
   private async loadParticles(): Promise<void> {
     await this.ngParticlesService.init(async (engine) => {
-      console.log(engine);
       await loadSlim(engine);
     });
   }
