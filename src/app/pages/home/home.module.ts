@@ -8,6 +8,7 @@ import { ProfileModule } from '../profile/profile.module';
 import { AboutMeModule } from '../about-me/about-me.module';
 import { SkillModule } from '../skill/skill.module';
 import { ExperienceModule } from '../experience/experience.module';
+import { FooterModule } from 'src/app/components/footer/footer.module';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -19,6 +20,7 @@ import { ExperienceModule } from '../experience/experience.module';
     AboutMeModule,
     SkillModule,
     ExperienceModule,
+    FooterModule,
   ],
   exports: [HomeComponent],
 })

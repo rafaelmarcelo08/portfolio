@@ -1,0 +1,58 @@
+/* Estilo do footer */
+.footer-container {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  font-size: 0.9em;
+  text-align: center;
+  padding: 15px 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.dev {
+  color: #7f2cf1;
+}
+
+a,
+fa-icon {
+  color: #50fa7b;
+  text-decoration: none;
+}
+.footer-top-line {
+  height: 4px;
+  background: linear-gradient(to right, #50fa7b, transparent);
+  border-radius: 2px;
+  margin-bottom: 10px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-right {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.footer-right strong {
+  color: #50fa7b;
+}
+
+/* Responsividade */
+@media (min-width: 640px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+}
