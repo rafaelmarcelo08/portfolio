@@ -6,13 +6,11 @@
   margin: 40px auto;
   padding: 20px;
   max-width: 1000px;
-  background-color: #1e1e2f; /* Fundo mais escuro */
   color: #ffffff;
-  border-radius: 0; /* Remove as bordas arredondadas */
 }
 
 .about-me-container h2 {
-  font-size: 2.5em;
+  font-size: 1.2em;
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 10px;
@@ -33,7 +31,7 @@
 }
 
 .about-me-container p {
-  font-size: 1.2em;
+  font-size: 0.95em;
   line-height: 1.6;
   margin: 10px 0;
 }
@@ -52,7 +50,7 @@
   color: #1e1e2f; /* Texto escuro para contraste */
   border: none;
   padding: 10px 20px;
-  font-size: 1.2em;
+  font-size: 0.8em;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 4px;
@@ -71,7 +69,7 @@
 }
 
 .btn-diploma fa-icon {
-  font-size: 1.5em; /* Tamanho do ícone */
+  font-size: 1em; /* Tamanho do ícone */
 }
 
 /* Responsividade usando breakpoints do Tailwind */
@@ -86,4 +84,25 @@
 
 /* lg (mínimo de 1024px) */
 @media (min-width: 1024px) {
+  .about-me-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1000px;
+  }
+
+  .about-me-container h2 {
+    font-size: 2.5em;
+  }
+
+  .about-me-container p {
+    font-size: 1.2em;
+  }
+
+  .btn-diploma {
+    font-size: 1.2em;
+  }
+
+  .btn-diploma fa-icon {
+    font-size: 1.5em; /* Tamanho do ícone */
+  }
 }
