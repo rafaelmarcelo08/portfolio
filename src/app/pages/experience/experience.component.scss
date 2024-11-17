@@ -5,13 +5,12 @@
   text-align: justify;
   margin: 40px auto;
   padding: 20px;
-  max-width: 1000px;
-  background-color: #1e1e2f;
+  width: auto;
   color: #ffffff;
 }
 
 .experience-container h2 {
-  font-size: 2.5em;
+  font-size: 1.2em;
   font-weight: bold;
   color: #ffffff;
   margin-bottom: 10px;
@@ -28,20 +27,19 @@
 
 .experience-content {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   width: 100%;
-  max-width: 1000px;
 }
 
 .sidebar {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 200px;
   background-color: #2a2a3c;
   border-radius: 10px;
   padding: 10px;
+  width: 100%;
 }
 
 .sidebar-button {
@@ -91,8 +89,10 @@
   color: #ffffff;
 }
 
-.job-details .title h3 {
-  font-size: 1.5em;
+.job-details .title h3,
+strong,
+p {
+  font-size: 0.9em;
   font-weight: bold;
 }
 
@@ -101,8 +101,42 @@
   align-items: center;
   gap: 10px;
   margin-top: 10px;
+  font-size: 0.8em;
+  line-height: 20px;
 }
 
 .activity fa-icon {
   color: #50fa7b;
+}
+
+/* Responsividade usando breakpoints do Tailwind */
+
+/* sm (mínimo de 640px) */
+@media (min-width: 640px) {
+}
+
+/* md (mínimo de 768px) */
+@media (min-width: 768px) {
+}
+
+/* lg (mínimo de 1024px) */
+@media (min-width: 1024px) {
+  .experience-container h2 {
+    font-size: 2.5em;
+  }
+
+  .experience-content {
+    flex-direction: row;
+    max-width: 1000px;
+  }
+
+  .sidebar {
+    max-width: 200px;
+  }
+
+  .job-details .title h3,
+  strong,
+  p {
+    font-size: 1.1em;
+  }
 }
