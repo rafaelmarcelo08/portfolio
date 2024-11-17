@@ -41,3 +41,49 @@
 .about-me-container strong {
   color: #50fa7b; /* Cor verde para o destaque */
 }
+
+/* Estilização para o botão do diploma */
+.button-container {
+  margin-top: 20px;
+}
+
+.btn-diploma {
+  background-color: #50fa7b; /* Cor verde do tema */
+  color: #1e1e2f; /* Texto escuro para contraste */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espaço entre o texto e o ícone */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para destacar o botão */
+  transition: all 0.3s ease; /* Transição suave para hover */
+}
+
+.btn-diploma:hover {
+  transform: translateY(-5px);
+  background-color: #45a049; /* Verde mais escuro no hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
+
+.btn-diploma fa-icon {
+  font-size: 1.5em; /* Tamanho do ícone */
+}
+
+/* Responsividade usando breakpoints do Tailwind */
+
+/* sm (mínimo de 640px) */
+@media (min-width: 640px) {
+}
+
+/* md (mínimo de 768px) */
+@media (min-width: 768px) {
+}
+
+/* lg (mínimo de 1024px) */
+@media (min-width: 1024px) {
+}

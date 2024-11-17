@@ -16,6 +16,7 @@ header {
   align-items: center;
   transition: 0.7s;
   padding: 37px 20px; /* Ajuste no padding inicial para responsividade */
+  z-index: 1000;
 }
 
 header.sticky {
