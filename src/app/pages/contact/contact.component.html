@@ -1,0 +1,18 @@
+<div class="contact-container" data-aos="flip-right">
+  <h2>Fale Comigo</h2>
+  <div class="separator"></div>
+  <p>
+    Precisa entrar em contato? Escolha um dos canais abaixo para me encontrar!
+  </p>
+
+  <div class="button-container">
+    <button
+      *ngFor="let contact of contacts"
+      class="btn-contact"
+      (click)="openLink(contact.link)"
+    >
+      <fa-icon [icon]="contact.icon" class="contact-icon"></fa-icon>
+      <span> {{ contact.name }}</span>
+    </button>
+  </div>
+</div>

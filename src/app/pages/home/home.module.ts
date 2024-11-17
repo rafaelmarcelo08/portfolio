@@ -9,6 +9,7 @@ import { AboutMeModule } from '../about-me/about-me.module';
 import { SkillModule } from '../skill/skill.module';
 import { ExperienceModule } from '../experience/experience.module';
 import { FooterModule } from 'src/app/components/footer/footer.module';
+import { ContactModule } from '../contact/contact.module';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -21,6 +22,7 @@ import { FooterModule } from 'src/app/components/footer/footer.module';
     SkillModule,
     ExperienceModule,
     FooterModule,
+    ContactModule,
   ],
   exports: [HomeComponent],
 })
