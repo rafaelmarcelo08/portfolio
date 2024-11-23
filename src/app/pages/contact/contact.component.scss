@@ -73,17 +73,17 @@ p {
 
 /* sm (mínimo de 640px) */
 @media (min-width: 640px) {
-  .about-me-container {
+  .contact-container {
     margin: 40px auto;
     padding: 20px;
     max-width: 800px;
   }
 
-  .about-me-container h2 {
+  .contact-container h2 {
     font-size: 2em;
   }
 
-  .about-me-container p {
+  .contact-container p {
     font-size: 1.1em;
   }
 
@@ -98,17 +98,17 @@ p {
 
 /* md (mínimo de 768px) */
 @media (min-width: 768px) {
-  .about-me-container {
+  .contact-container {
     margin: 40px auto;
     padding: 20px;
     max-width: 900px;
   }
 
-  .about-me-container h2 {
+  .contact-container h2 {
     font-size: 2.2em;
   }
 
-  .about-me-container p {
+  .contact-container p {
     font-size: 1.15em;
   }
 
@@ -123,17 +123,17 @@ p {
 
 /* lg (mínimo de 1024px) */
 @media (min-width: 1024px) {
-  .about-me-container {
+  .contact-container {
     margin: 40px auto;
     padding: 20px;
     max-width: 1000px;
   }
 
-  .about-me-container h2 {
+  .contact-container h2 {
     font-size: 2.5em;
   }
 
-  .about-me-container p {
+  .contact-container p {
     font-size: 1.2em;
   }
 
