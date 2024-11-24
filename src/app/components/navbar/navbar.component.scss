@@ -92,23 +92,63 @@ nav {
 }
 
 nav.open {
-  display: block;
-  position: absolute;
-  top: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
+  height: 100vh; /* Ocupa toda a altura da tela */
   background: #1a1a2e;
-  padding: 20px 0;
-}
-
-nav ul {
   flex-direction: column;
+  justify-content: center; /* Centraliza o menu verticalmente */
+  align-items: center;
+  z-index: 999; /* Certifica-se que o menu fique acima de outros elementos */
+  padding: 0;
 }
 
-/* md (mínimo de 768px) */
+/* Botão de fechar (X) no menu */
+.menu-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001; /* Certifica-se que o botão fique acima dos itens do menu */
+}
+
+.menu-close fa-icon {
+  color: #50fa7b; /* Cor do ícone X */
+  transition: transform 0.3s ease;
+}
+
+.menu-close fa-icon:hover {
+  transform: scale(1.2); /* Aumenta o ícone ao passar o mouse */
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Alinha os itens do menu verticalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+  }
+
+  header .logo a,
+  header .logo fa-icon {
+    font-size: 1.8em; /* Aumenta o tamanho da logo */
+  }
+}
+
+/* Ajustes para telas maiores */
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
+  }
+
+  .menu-close {
+    display: none; /* Oculta o botão X em telas maiores */
   }
 
   nav {
@@ -116,6 +156,7 @@ nav ul {
     position: static;
     width: auto;
     padding: 0;
+    height: auto;
   }
 
   nav ul {
@@ -123,7 +164,6 @@ nav ul {
   }
 }
 
-/* lg (mínimo de 1024px) */
 @media (min-width: 1024px) {
   header .logo a,
   header .logo fa-icon {
@@ -131,7 +171,6 @@ nav ul {
   }
 }
 
-/* xl (mínimo de 1280px) */
 @media (min-width: 1280px) {
   header .logo a,
   header .logo fa-icon {

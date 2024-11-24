@@ -1,5 +1,5 @@
 import { Component, HostListener } from '@angular/core';
-import { faCode, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +9,7 @@ import { faCode, faBars } from '@fortawesome/free-solid-svg-icons';
 export class NavbarComponent {
   public faCode = faCode;
   public faBars = faBars;
+  public faTimes = faTimes;
 
   public isSticky = false;
   public menuOpen: boolean = false;
@@ -34,7 +35,7 @@ export class NavbarComponent {
   }
 
   private checkMenuState() {
-    // Se a tela for maior que 768px (ou o breakpoint usado), fecha o menu
+    // Fecha o menu automaticamente em telas maiores
     if (this.screenWidth > 768 && this.menuOpen) {
       this.menuOpen = false;
     }
