@@ -34,6 +34,12 @@ header .logo fa-icon {
 fa-icon {
   color: #50fa7b;
   text-decoration: none;
+  transition: transform 0.3s ease; /* Transição suave */
+}
+
+.faBars:hover,
+.faTimes:hover {
+  transform: scale(1.2); /* Aumenta o tamanho para o efeito de inchar */
 }
 
 .logo .dev {
@@ -59,7 +65,13 @@ header nav ul li a {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.3s ease; /* Adiciona transição ao hover */
+  cursor: pointer; /* Define o cursor como pointer */
+}
+
+header nav ul li a:hover {
+  transform: scale(1.05); /* Leve aumento no tamanho ao passar o mouse */
+  color: #50fa7b; /* Muda a cor ao passar o mouse */
 }
 
 header nav ul li a::after {
@@ -85,6 +97,11 @@ header nav ul li a:hover::after {
   color: white;
   font-size: 24px;
   cursor: pointer;
+  transition: transform 0.3s ease; /* Adiciona transição ao hover */
+}
+
+.menu-toggle:hover {
+  transform: scale(1.2); /* Aumenta o botão ao passar o mouse */
 }
 
 nav {
@@ -117,6 +134,11 @@ nav.open {
   font-size: 24px;
   cursor: pointer;
   z-index: 1001; /* Certifica-se que o botão fique acima dos itens do menu */
+  transition: transform 0.3s ease; /* Adiciona transição ao hover */
+}
+
+.menu-close:hover {
+  transform: scale(1.2); /* Aumenta o botão ao passar o mouse */
 }
 
 .menu-close fa-icon {
