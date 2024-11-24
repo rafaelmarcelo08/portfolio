@@ -4,7 +4,10 @@
     <a routerLink="/">Rocket<span class="dev">Dev</span></a>
     <fa-icon [icon]="faCode"></fa-icon>
   </span>
-  <nav>
+  <button class="menu-toggle" (click)="toggleMenu()">
+    <fa-icon [icon]="faBars"></fa-icon>
+  </button>
+  <nav [class.open]="menuOpen">
     <ul>
       <li><a routerLink="/">Perfil</a></li>
       <li><a routerLink="/news">Sobre mim</a></li>

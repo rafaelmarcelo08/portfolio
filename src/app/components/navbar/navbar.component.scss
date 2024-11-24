@@ -17,6 +17,20 @@ header.sticky {
   border-bottom: solid #50fa7b 1px;
 }
 
+header .logo {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.7s;
+}
+
+header .logo a,
+header .logo fa-icon {
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
 fa-icon {
   color: #50fa7b;
   text-decoration: none;
@@ -24,16 +38,6 @@ fa-icon {
 
 .logo .dev {
   color: #7f2cf1;
-}
-
-header .logo {
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  font-size: 1.5em;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: 0.7s;
 }
 
 header nav ul {
@@ -56,6 +60,10 @@ header nav ul li a {
   text-decoration: none;
 }
 
+// .menu-toggle {
+//   display: block;
+// }
+
 header nav ul li a:hover {
   color: #999;
 }
@@ -69,56 +77,40 @@ header.sticky ul li a {
 
 /* sm (mínimo de 640px) */
 @media (min-width: 640px) {
-  header {
-    padding: 37px 50px;
-  }
-  header .logo {
-    font-size: 1.8em;
+  header .logo a,
+  header .logo fa-icon {
+    font-size: 0.8em;
   }
 }
 
 /* md (mínimo de 768px) */
 @media (min-width: 768px) {
-  header {
-    padding: 37px 80px;
-  }
-  header .logo {
-    font-size: 2em;
+  header .logo a,
+  header .logo fa-icon {
+    font-size: 0.9em;
   }
 }
 
 /* lg (mínimo de 1024px) */
 @media (min-width: 1024px) {
-  header {
-    padding: 37px 100px;
-  }
-  header nav ul li a {
-    font-size: 18px;
+  header .logo a,
+  header .logo fa-icon {
+    font-size: 1.8em;
   }
 }
 
 /* xl (mínimo de 1280px) */
 @media (min-width: 1280px) {
-  header {
-    padding: 37px 120px;
-  }
-  header .logo {
-    font-size: 1.5em;
-  }
-  header nav ul li a {
-    font-size: 20px;
+  header .logo a,
+  header .logo fa-icon {
+    font-size: 2em;
   }
 }
 
 /* 2xl (mínimo de 1536px) */
 @media (min-width: 1536px) {
-  header {
-    padding: 37px 140px;
-  }
-  header .logo {
-    font-size: 2.5em;
-  }
-  header nav ul li a {
-    font-size: 22px;
+  header .logo a,
+  header .logo fa-icon {
+    font-size: 2.2em;
   }
 }
