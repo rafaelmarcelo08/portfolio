@@ -12,13 +12,31 @@ export class NavbarComponent {
 
   public isSticky = false;
   public menuOpen: boolean = false;
+  private screenWidth: number;
+
+  constructor() {
+    this.screenWidth = window.innerWidth;
+  }
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
     this.isSticky = window.scrollY > 0;
   }
 
+  @HostListener('window:resize', [])
+  onResize() {
+    this.screenWidth = window.innerWidth;
+    this.checkMenuState();
+  }
+
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
+  }
+
+  private checkMenuState() {
+    // Se a tela for maior que 768px (ou o breakpoint usado), fecha o menu
+    if (this.screenWidth > 768 && this.menuOpen) {
+      this.menuOpen = false;
+    }
   }
 }

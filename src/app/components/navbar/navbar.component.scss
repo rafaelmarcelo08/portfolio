@@ -7,7 +7,7 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: 0.7s;
-  padding: 37px 20px; /* Ajuste no padding inicial para responsividade */
+  padding: 37px 20px;
   z-index: 1000;
 }
 
@@ -45,10 +45,12 @@ header nav ul {
   justify-content: center;
   align-items: center;
   gap: 15px;
+  list-style: none;
+  transition: 0.7s;
 }
 
 header nav ul li {
-  list-style: none;
+  position: relative;
 }
 
 header nav ul li a {
@@ -56,38 +58,68 @@ header nav ul li a {
   letter-spacing: 1px;
   font-size: 16px;
   font-weight: 700;
-  transition: 0.7s;
   text-decoration: none;
+  transition: color 0.3s;
 }
 
-// .menu-toggle {
-//   display: block;
-// }
-
-header nav ul li a:hover {
-  color: #999;
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #50fa7b;
+  transition: width 0.3s ease-in-out;
 }
 
-header.sticky .logo,
-header.sticky ul li a {
+header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Botão faBars - Padrão visível em telas menores */
+.menu-toggle {
+  display: block;
+  background: none;
+  border: none;
   color: white;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-/* Responsividade usando breakpoints do Tailwind */
+nav {
+  display: none;
+}
 
-/* sm (mínimo de 640px) */
-@media (min-width: 640px) {
-  header .logo a,
-  header .logo fa-icon {
-    font-size: 0.8em;
-  }
+nav.open {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #1a1a2e;
+  padding: 20px 0;
+}
+
+nav ul {
+  flex-direction: column;
 }
 
 /* md (mínimo de 768px) */
 @media (min-width: 768px) {
-  header .logo a,
-  header .logo fa-icon {
-    font-size: 0.9em;
+  .menu-toggle {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    position: static;
+    width: auto;
+    padding: 0;
+  }
+
+  nav ul {
+    flex-direction: row;
   }
 }
 
@@ -107,7 +139,6 @@ header.sticky ul li a {
   }
 }
 
-/* 2xl (mínimo de 1536px) */
 @media (min-width: 1536px) {
   header .logo a,
   header .logo fa-icon {
