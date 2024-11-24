@@ -165,6 +165,12 @@ nav.open {
 
 /* Ajustes para telas maiores */
 @media (min-width: 768px) {
+  header .logo a,
+  header .logo fa-icon {
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+
   .menu-toggle {
     display: none;
   }
